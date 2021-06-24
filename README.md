@@ -158,9 +158,9 @@ $$
 
 $$
 \begin{aligned}
-    I(X;Y) &= H(X) - H(X|Y) \\
-	&= H(Y) - H(Y|X) \\
-	&= H(X) + H(Y) - H(X,Y)\\
+    I(X;Y) &= H(X) - H(X|Y) \\\\
+	&= H(Y) - H(Y|X) \\\\
+	&= H(X) + H(Y) - H(X,Y)\\\\
 \end{aligned}	
 $$
 
