@@ -88,10 +88,10 @@ $$
 上式称为信息熵的链式法则。
 
 
-**注：**根据上面的推导可知：$H(Y|X)=H(X,Y)-H(X)$。假设系统中只有两个变量$X,Y$，其中$X$为输入变量，$Y$为输出变量，
+**注：** 根据上面的推导可知：$H(Y|X)=H(X,Y)-H(X)$。假设系统中只有两个变量$X,Y$，其中$X$为输入变量，$Y$为输出变量，
 那么联合熵$H(X,Y)$ 表示整个系统的不确定性，信息熵$H(X)$ 表示输入变量$X$的不确定性，条件熵$H(Y|X)$就刻画了知道输入变量后输出变量的不确定性，机器学习经典的最大熵原理就是在给定一些输入条件后，最大化输出变量的条件熵。
 
-**注：**根据后面互信息的性质以及信息熵、互信息和条件熵之间的关系:
+**注：** 根据后面互信息的性质以及信息熵、互信息和条件熵之间的关系:
 
 $$0\leq I(X;Y)=H(X)-H(X|Y)$$
 
@@ -199,9 +199,9 @@ $$
 
 $$
 \begin{aligned}
-I(X;Y|Z) &= H(X,Z) + H(Y,Z) - H(X,Y,Z) - H(Z) \\
-&= H(X|Z) - H(X|Y,Z) \\
-&= H(Y|Z) - H(Y|X,Z) \\
+I(X;Y|Z) &= H(X,Z) + H(Y,Z) - H(X,Y,Z) - H(Z) \\\\
+&= H(X|Z) - H(X|Y,Z) \\\\
+&= H(Y|Z) - H(Y|X,Z) \\\\
 &= H(X|Z) + H(Y|Z) - H(X,Y|Z)		
 \end{aligned}
 $$
@@ -237,7 +237,7 @@ $$
 
 $$
 \begin{aligned}
-  R_M(x_1,\ldots,x_{m-1};x_m)&= H(x_m) + H(x_1,\ldots,x_{m-1}) - H(x_1,\ldots, x_{m-1}, x_m)\\
+  R_M(x_1,\ldots,x_{m-1};x_m)&= H(x_m) + H(x_1,\ldots,x_{m-1}) - H(x_1,\ldots, x_{m-1}, x_m)\\\\
   &= H(x_m) - H(x_m|x_1,\ldots,x_{m-1})
 \end{aligned}
 $$
@@ -252,8 +252,8 @@ $$
 
 $$
 \begin{aligned}
-  R_C(x_1|x_2,\ldots,x_{m-1};x_m) &= H(x_1,\ldots,x_{m-1}) + H(x_2,\ldots,x_m) - H(x_1,\ldots,x_m)- H(x_2,\ldots,x_{m-1})\\
-  &=H(x_m|x_2,\ldots,x_{m-1}) - H(x_m|x_1,\ldots,x_{m-1})\\
+  R_C(x_1|x_2,\ldots,x_{m-1};x_m) &= H(x_1,\ldots,x_{m-1}) + H(x_2,\ldots,x_m) - H(x_1,\ldots,x_m)- H(x_2,\ldots,x_{m-1})\\\\
+  &=H(x_m|x_2,\ldots,x_{m-1}) - H(x_m|x_1,\ldots,x_{m-1})\\\\
   &=H(x_1|x_2,\ldots,x_{m-1}) - H(x_1|x_2,\ldots,x_{m-1},x_m)
 \end{aligned}
 $$
